@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Buty Parlor</title>
+
+<style>
+	body, h1, h2, h3, p, ul, li, form 
+	{
+   		margin: 0;
+   		padding: 0;
+  		box-sizing: border-box;
+	}
+
+	body
+	{
+   		font-family: Arial, sans-serif;
+   		line-height: 1.6;
+	}
+
+	header 
+	{
+    		background: #333;
+   		color: #fff;
+   		padding: 1rem 0;
+	}
+
+	nav .container 
+	{
+ 		display: flex;
+  		justify-content: space-between;
+		align-items: center;
+   		max-width: 1200px;
+    		margin: 0 auto;
+    		padding: 0 1rem;
+	}
+
+	nav h1
+	{
+  	 	margin: 0;
+	}
+
+	nav ul 
+	{
+    		list-style: none;
+    		display: flex;
+	}
+
+	nav ul li 
+	{
+    		margin-left: 1rem;
+	}
+
+	nav ul li a 
+	{
+    		color: #fff;
+    		text-decoration: none;
+    		font-weight: bold;
+	}
+
+	.hero 
+	{
+    		background: #555;
+    		color: #fff;
+    		text-align: center;
+    		padding: 4rem 2rem;	
+	}
+
+	.hero h2 
+	{
+    		margin: 0;
+    		font-size: 2.5rem;
+	}
+
+	.hero p 
+	{
+    		margin: 1rem 0 0;
+   		font-size: 1.2rem;
+	}
+
+	section 
+	{
+    		padding: 2rem 1rem;
+	}
+
+	.container 
+	{
+    		max-width: 1000px;
+    		margin: 0 auto;
+	}
+
+	.service 
+	{
+    		margin-bottom: 1.5rem;
+	}
+
+	form 
+	{
+    		display: flex;
+    		flex-direction: column;
+	}
+
+	form label 
+	{
+    		margin-bottom: 0.5rem;
+	}
+
+	form input, form textarea 
+	{
+    		padding: 0.5rem;
+    		margin-bottom: 1rem;
+    		border: 1px solid #ddd;
+    		border-radius: 4px;
+	}
+
+	form button 
+	{
+    		padding: 0.75rem;
+    		border: none;
+    		background: #333;
+    		color: #fff;
+    		font-size: 1rem;
+    		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	form button:hover 
+	{
+    		background: #555;
+	}
+
+	footer 
+	{
+    		background: #333;
+    		color: #fff;
+    		text-align: center;
+    		padding: 0;
+    		position: fixed;
+    		bottom: 0;
+    		width: 100%;
+	}
+	
+</style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Beuty Parlor</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h2>Welcome to Beuty Parlor</h2>
+            <p>Your gateway to a rich cultural heritage and vibrant community.</p>
+        </div>
+
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Parlor</h2>
+            <p>Beuty Parlor  is a  Available our city in Maharashtra, India, known for its Favorite and Special Beuty Parlor significance. It is a vibrant place with a rich Beuty and a welcoming community.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Facial</h3>
+                <p>Explore the beautiful landmarks and attractions of Facial.</p>
+            </div>
+            <div class="service">
+                <h3>Massage</h3>
+                <p>Get information on local administration and community services.</p>
+            </div>
+            <div class="service">
+                <h3>Events</h3>
+                <p>Stay updated on upcoming events and festivals in Beuty Parlor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Beauty Parlour | Designed by ANKIT THOOL.</p>
+        </div>
+    </footer>
+</body>
+</html>

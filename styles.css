@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #e91e63;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header .logo h1 {
+    color: white;
+    font-size: 2.5em;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background-image: url('beauty-parlor-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color:blueviolet;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .hero .cta-btn:hover {
+    background-color: #f50057;
+  }
+  
+  .services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .service-item {
+    margin: 20px 0;
+  }
+  
+  .contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    padding: 15px 30px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact button:hover {
+    background-color: #c2185b;
+  }
+  
+  footer {
+    background-color: #e91e63;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+.scrolling-images {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f5; 
+  }
+  
+  .scrolling-wrapper {
+    display: flex;
+    animation: scrollImages 20s linear infinite;
+  }
+  
+  .scrolling-wrapper img {
+    width: 300px; 
+    height: auto;
+    margin-right: 20px; 
+    border-radius: 10px; 
+  }
+  
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  /* General styles for the services page */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  /* Service item container */
+  .service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .service-item .service-img {
+    flex: 1;
+    padding: 15px;
+    max-width: 300px;
+  }
+  
+  .service-item .service-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .service-item .service-content {
+    flex: 2;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .service-item .service-content h3 {
+    font-size: 1.8em;
+    color: #e91e63;
+  }
+  
+  .service-item .service-content p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsiveness: Stack items on smaller screens */
+  @media (max-width: 768px) {
+    .service-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .service-item .service-img {
+      margin-bottom: 20px;
+    }
+  }
+/* Spacer section to create distance between footer and button */
+.spacer {
+    height: 50px; /* Adjust the height to your desired space */
+  }
+  
+  footer {
+    background-color: #e91e63;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero-content {
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+  }
+  
+  .hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px; /* Creates space between the paragraph and the button */
+  }
+  
+  
+  
+  .cta-btn:hover {
+    background-color: #f50057;
+  }
+  .cta-btn {
+    background-color: #ff4081;
+    padding: 10px 20px; /* Reduced padding for a smaller button */
+    color: white;
+    text-decoration: none;
+    font-size: 1em; /* Smaller font size */
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .cta-btn:hover {
+    background-color: #f50057;
+  }
+  
+  .about {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  .about-image {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .about-text, .about-image {
+      padding: 20px 0;
+    }
+  }
+  .offers {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .offers h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .offer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .offer-item img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .offer-details {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .offer-details h3 {
+    font-size: 1.8em;
+    color: #e91e63;
+  }
+  
+  .offer-details p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .offer-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .offer-item img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+    

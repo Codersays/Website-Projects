@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Beauty Parlour</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    /* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    background-color: #ff66b2;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Appointment Section */
+.appointment {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.appointment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.appointment-info {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.appointment-info h2 {
+    color: #ff66b2;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.appointment-info p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Form Styles */
+.appointment-form {
+    flex: 1.5;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form label {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.appointment-form input, .appointment-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.appointment-form input:focus, .appointment-form select:focus {
+    border-color: #ff66b2;
+    outline: none;
+}
+
+.appointment-form button {
+    background-color: #ff66b2;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-form button:hover {
+    background-color: #e55e99;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .appointment-container {
+        flex-direction: column;
+    }
+
+    .appointment-info, .appointment-form {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">Beauty Parlour</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="book-appointment.html">Book Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Appointment Form Section -->
+    <section class="appointment">
+        <div class="appointment-container">
+            <div class="appointment-info">
+                <h2>Book Your Appointment</h2>
+                <p>We are excited to serve you! Please fill out the form below to book an appointment at our beauty parlour.</p>
+                <p>Choose your preferred date and service, and we will confirm your appointment.</p>
+            </div>
+
+            <div class="appointment-form">
+                <form action="#" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                    <label for="date">Preferred Appointment Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="service">Select Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="Haircut">Haircut</option>
+                        <option value="Facial">Facial</option>
+                        <option value="Nail Treatment">Nail Treatment</option>
+                        <option value="Massage">Massage</option>
+                    </select>
+
+                    <button type="submit" class="btn">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Beauty Parlour | Designed by ANKIT THOOL</p>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
